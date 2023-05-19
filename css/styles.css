@@ -640,7 +640,7 @@ img {
     width: 100%;
     height: 100%;
     transform: translateX(0);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: rgba(46, 47, 66, 0.4);
 }
@@ -650,6 +650,7 @@ img {
     opacity: 0;
     pointer-events: none;
     transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 }
@@ -686,7 +687,6 @@ img {
     padding: 0;
     cursor: pointer;
 
-    color: var(--main-color-background);
     background: var(--color-border);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -695,18 +695,17 @@ img {
 .modal-button:hover,
 .modal-button:focus {
     background-color: var(--hover-color);
-    border: none;
-    color: var(--third-color-font);
+    border: transparent;
 
 }
 
 .modal-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    fill: currentColor;
+    fill: var(--main-color-background);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
-    fill: currentColor;
+.modal-button:hover .modal-icon,
+.modal-button:focus .modal-icon {
+    fill: var(--third-color-font);
 }
