@@ -477,7 +477,9 @@ img {
     letter-spacing: 0.02em;
     color: var(--second-color-background);
 }
-
+.social-footer {
+    margin-right: 80px;
+}
 .social-footer-text {
     margin-bottom: 16px;
 
@@ -504,6 +506,68 @@ img {
 
 .icon-footer {
     fill: var(--second-color-background);
+}
+
+.footer-subscribe-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.footer-subscribe-text,
+.footer-subscribe-button {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--third-color-font);
+
+}
+
+.footer-subscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    background: var(--main-color-link);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-subscribe-label {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    color: var(--third-color-font);
+
+}
+
+.footer-subscribe-input {
+    padding: 8px 16px;
+    min-width: 264px;
+    min-height: 40px;
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    color: var(--third-color-font);
+
+    background-color: transparent;
+    border: 1px solid var(--third-color-font);
+    border-radius: 4px;
+}
+
+.footer-subscribe-icon {
+    margin-left: 16px;
 }
 
 /* PORTFOLIO */
@@ -639,8 +703,6 @@ img {
     top: 0;
     width: 100%;
     height: 100%;
-    /* transform: translateX(0); */
-    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: rgba(46, 47, 66, 0.4);
@@ -650,8 +712,6 @@ img {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    /* transform: translateX(-100%); */
-    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
