@@ -888,6 +888,7 @@ img {
 
 .modal-checkbox-input {
     appearance: none;
+    position: absolute;
 }
 
 .modal-checkbox-input:checked+.icon-checkbox {
